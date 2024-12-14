@@ -1,0 +1,259 @@
+:root{
+    --main-color:#8e44ad;
+    --black:#222;
+    --white:#fff;
+    --light-black:#777;
+    --light-white:#fff9;
+    --dark-bg:rgba(0,0,0,1);
+    --light-bg:#eee;
+    --border:.1rem solid var(--black);
+    --box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    --text-shadow:01.5rem 3rem rgba(0,0,0,.3);
+    }
+    *{
+    font-family: sans-serif;
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    }
+   
+    html::-webkit-scrollbar{
+    width: 1rem;
+    
+    }
+    html::-webkit-scrollbar{
+    width: 1rem;
+    
+    }
+    html::-webkit-scrollbar-track{
+        background-color:var(--white);
+    }
+    html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    }
+    
+
+
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar {
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+    }
+    
+    .sidebar h2 {
+        margin-bottom: 100px;
+    }
+    
+    .item2 {
+        margin-top: 30px; /* Add margin to separate the buttons from the title */
+    }
+    
+    .button-container2 {
+        margin-bottom: 70px; /* Add space between button containers */
+    }
+    
+    .btn1 {
+        display: block;
+        padding: 10px 20px;
+        background-color: #040404; /* Button background color */
+        color: #fff; /* Button text color */
+        text-decoration: none; /* Remove underline from links */
+        border: none; /* Remove button border */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s; /* Smooth transition for background color */
+    }
+    
+    .btn1:hover {
+        background-color:var(--main-color); /* Darker background color on hover */
+    }
+    
+    
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.script{
+    padding: 20px;
+    margin-left: 22rem;
+}
+.script h1{
+    margin-bottom: 20px;
+}
+.script p{
+    margin-bottom: 50px;
+}
+
+
+
+
+/* CSS for button containers */
+.button-container {
+    margin-right: 70px; /* Add space between buttons */
+}
+
+/* Last button container should not have margin-right */
+.button-container:last-child {
+    margin-right: 0; /* Remove margin-right for the last button */
+}
+
+/* CSS for buttons */
+.btn {
+    display: inline-block;
+    padding: 30px 50px;
+    background-color: #000001; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline from links */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: var(--main-color); /* Darker background color on hover */
+}
+
+/* Align buttons horizontally */
+.item {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 800px;
+   
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #070707;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #ddd;
+}
+
+table a {
+    text-decoration: none;
+    color: blue;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 50%; 
+    margin: 0 auto;
+    padding-top: 10px; 
+    max-width: 800px;
+}
+a i{
+    padding: 10px;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+ }
+ 
+ .form-container form{
+    padding:2rem;
+    border-radius: .5rem;
+    border:var(--border);
+    background-color: var(--white);
+   height: 30rem;
+    width: 20rem; 
+    text-align: center;
+ }
+ 
+ .form-container form h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+    margin-bottom: 2rem;
+ }
+ .ad_package{
+    margin-bottom: 50px;
+}
+.ad_package input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.ad_package textarea{
+    margin-bottom: 30px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; 
+}
+
+ .btn4{
+    background-color: #030303;
+    width: 60% ;
+    padding:1.2rem 1.3rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    animation:fadeIn .4s linear backwards.7s;
+    cursor: pointer;
+    text-decoration: none;
+   
+ }
+ 
+ .btn4:hover{
+    background: var(--main-color);
+ }

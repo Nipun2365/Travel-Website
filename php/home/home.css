@@ -1,0 +1,347 @@
+
+:root{
+    --main-color:#8e44ad;
+    --black:#222;
+    --white:#fff;
+    --light-black:#777;
+    --light-white:#fff9;
+    --dark-bg:rgba(0,0,0,1);
+    --light-bg:#eee;
+    --border:.1rem solid var(--black);
+    --box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    --text-shadow:01.5rem 3rem rgba(0,0,0,.3);
+    }
+    *{
+    font-family: sans-serif;
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    }
+    html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    }
+    html::-webkit-scrollbar{
+    width: 1rem;
+    
+    }
+    html::-webkit-scrollbar{
+    width: 1rem;
+    
+    }
+    html::-webkit-scrollbar-track{
+        background-color:var(--white);
+    }
+    html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    }
+    section{
+       padding: 5rem 10%; 
+    }
+    .header{
+    position: sticky;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    background-color: var(--white);
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo{
+    font-size: 2.5rem;
+    color:var(--black);
+    }
+    .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color:rgba(0,0,0,1);
+    }
+    header.navbar a:hover{
+    color: var(--main-color);
+    }
+    #menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+    display: none;  
+}
+
+
+
+/*-------------------home offer start------------------*/
+.home-offer{
+    text-align: center;
+    }
+    .content1{
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    .content1 h3{
+    font-size: 3.5rem;
+    text-transform:uppercase ;
+    color: var(--black);
+    }
+    .content1 p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+    }
+/*---------------------home offer end------------------*/
+
+/*--------------------home packages section start-------------------*/
+
+.box-containers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 2rem;
+    }
+    .images{
+    height: 25rem;
+    overflow: hidden;
+    }
+    .images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+    }
+    .contentt{
+    padding: 2rem;
+    text-align: center;
+    }
+    .contentt h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    }
+    .contentt p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+    }
+    .load-more{
+        text-align: center;
+        margin-top: 2rem;
+    } 
+    .home-packages{
+        background: var(--light-bg);
+    }
+    .boxss{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    }
+/*-------------------home packages section end-------------------*/
+
+/*--------------------- home about section start----------------------*/
+
+.home-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    .image{
+    flex: 1 1 41rem;
+    }
+    .image img{
+    width: 100%;
+    }
+    .contentn{
+        flex: 1 1 41rem;
+        padding: 3rem;
+        background: var(--light-bg);
+    }
+    .contentn h3{
+        font-size: 3rem;
+        color: var(--black);
+    }
+    .contentn p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--black);
+    
+    }
+/*-------------------home about section end--------------------*/
+
+/*-------------------home services section start------------------*/
+.heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
+    }
+    .box-containe{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
+        gap: 1.5rem;
+    
+    }
+    .boxs{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--main-color);
+    cursor: pointer;
+    }
+    .boxs img{
+        height: 8rem;
+    }
+    .boxs:hover{
+    background: var(--black);
+    
+    }
+    .boxs h2{
+    color: var(--white);
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    }
+/*------------------home services section end---------------------*/
+
+/*---------------------home start-------------------*/
+@keyframes fadeIn{
+    0%{
+    transform: scale(0);
+    opacity: 0;
+    
+    }
+    }
+    
+    /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Home section styles */
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Slider container styles */
+.home-slider {
+    position: relative;
+    right: 12.5%;
+    width: 125%;
+    height: 100%;
+}
+
+/* Slide styles */
+.swiper-slide {
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Slide content styles */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content span {
+    font-size: 40px;
+}
+
+.content h3 {
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+
+
+/* Button styles */
+.btn{
+      
+    background:var(--black);
+    margin-top: 3rem; 
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    animation:fadeIn .4s linear backwards.7s;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+}
+
+/* Swiper navigation styles */
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    color:black;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
+
+.swiper-button-prev {
+    left: 20px;
+}
+
+/* Swiper pagination styles */
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color:var(--main-color); /* Replace var(--main-color) with a specific color */
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke:var(--main-color); /* Replace var(--main-color) with a specific color */
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+.swiper-pagination{
+   color:black; 
+}
+

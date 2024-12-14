@@ -1,0 +1,219 @@
+:root{
+    --main-color:#8e44ad;
+    --black:#222;
+    --white:#fff;
+    --light-black:#777;
+    --light-white:#fff9;
+    --dark-bg:rgba(0,0,0,1);
+    --light-bg:#eee;
+    --border:.1rem solid var(--black);
+    --box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    --text-shadow:01.5rem 3rem rgba(0,0,0,.3);
+    }
+    *{
+    font-family: sans-serif;
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    }
+    html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    }
+    html::-webkit-scrollbar{
+    width: 1rem;
+    
+    }
+    html::-webkit-scrollbar{
+    width: 1rem;
+    
+    }
+    html::-webkit-scrollbar-track{
+        background-color:var(--white);
+    }
+    html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    }
+    section{
+       padding: 5rem 10%; 
+    }
+    .header{
+    position: sticky;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    background-color: var(--white);
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo{
+    font-size: 2.5rem;
+    color:var(--black);
+    }
+    .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color:rgba(0,0,0,1);
+    }
+    header.navbar a:hover{
+    color: var(--main-color);
+    }
+    #menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+    display: none;  
+}
+
+/*------------------about section start----------------------*/
+.heading{
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    .heading h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    }
+    .about{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .image1{
+    flex: 1 1 41rem;
+    }
+    .image1 img{
+        width:100%
+    }
+    .content2{
+    flex: 1 1 41rem;
+    text-align: center;
+    }
+    .content2 h3{
+    font-size: 3rem;
+    color: var(--black);
+    }
+    .content2 p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+    }
+    .icons-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+    
+    }
+    .icons{
+    background: var(--light-bg);
+    padding: 2rem;
+    flex: 1 1 16rem;
+    }
+    .icons i{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+    }
+    .icons span{
+        font-size: 1.5rem;
+        color: var(--light-black);
+        display: block;
+    }
+/*----------------------about section end----------------------*/
+
+/*----------------------review section start------------------------*/
+.reviews{
+    background: var(--light-bg);
+} 
+.reviews h1{
+line-height: 2;
+font-size: 6rem;
+text-align: center;
+}
+.slide1{
+padding: 2rem;
+border: var(--border);
+background: var(--white);
+text-align: center;
+box-shadow: var(--box-shadow);
+user-select: none;
+}
+.stars{
+padding-bottom: .5rem;
+
+}
+.stars i{
+font-size: 1.7rem;
+color: var(--main-color);
+}
+.slide1 p{
+font-size: 1.5rem;
+color: var(--light-black);
+line-height: 2;
+padding: 1rem 0;
+}
+.slide1 span{
+font-size: 1.5rem;
+color: var(--main-color);
+display: block;
+}
+.slide1 h3{
+font-size: 2rem;
+color: var(--black);
+}
+.slide1 img{
+height: 7rem;
+width: 7rem;
+border-radius: 50%;
+margin-top:1rem ;
+}
+.btn{
+    display: inline-block;
+    background: var(--black);
+    margin-top: 1rem; 
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    animation:fadeIn .4s linear backwards.7s;
+ }
+ .btn:hover{
+     background: var(--main-color);
+ }
+ .heading{
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    .heading h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+    }
+
+/*------------------review section end-----------------------*/
